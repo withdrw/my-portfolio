@@ -453,11 +453,11 @@ nav{
     align-items: center;
   }
   .modal__language--img{
-    width: 100%;
+    width: 50%;
   }
   .modal__sub-title{
     margin: 12px 0 24px 0;
-    font-size: 14px;
+    font-size: 24px;
   }
   .modal__para{
     margin-bottom: 12px;

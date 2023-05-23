@@ -39,10 +39,10 @@ function contact(event){
 
   // emailjs
   .sendForm(
-      'service_qynyu2h', 
-      'template_es1nq4f',
+      'service_oqv9az3', 
+      'template_szpuk9m',
       event.target,
-      'XDV9HN18MBktStDuv'
+      '9I-PqnWEOw6bFzT02'
   ).then(() =>{
       loading.classList.remove("modal__overlay--visible");
       success.classList += " modal__overlay--visible";
@@ -218,13 +218,13 @@ function contact(event){
               <div className="project__wrapper--bg"></div>
               <div className="project__description">
                 <h3 className="project__description--title">
-                  Car sales project
+                  Netflix clone
                 </h3>
                 <h4 className="project__description--sub-title">
-                  HTML, CSS, JavaScript.
+                  HTML, CSS, JavaScript
                 </h4>
                 <p className="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed dolor dolores, recusandae sunt nulla quia ratione aperiam vel! Ipsum harum id quas sit alias.
+                  A simple Netflix clone , getting backend data from the Netflix AND Youtube API to show the movies and trailers. Also first time adding a checkout / pay option using Stripe.
                 </p>
               </div>
             </div>
@@ -235,13 +235,13 @@ function contact(event){
               <div className="project__wrapper--bg"></div>
               <div className="project__description">
                 <h3 className="project__description--title">
-                  Car sales project
+                 E-commerce Project
                 </h3>
                 <h4 className="project__description--sub-title">
                   HTML, CSS, JavaScript.
                 </h4>
                 <p className="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed dolor dolores, recusandae sunt nulla quia ratione aperiam vel! Ipsum harum id quas sit alias.
+                  A simple website that gets backend data to let users look for certain books , the prices and the ratings. 
                 </p>
               </div>
             </div>
@@ -252,13 +252,13 @@ function contact(event){
               <div className="project__wrapper--bg"></div>
               <div className="project__description">
                 <h3 className="project__description--title">
-                  Car sales project
+                 Forum 
                 </h3>
                 <h4 className="project__description--sub-title">
                   HTML, CSS, JavaScript.
                 </h4>
                 <p className="project__description--para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed dolor dolores, recusandae sunt nulla quia ratione aperiam vel! Ipsum harum id quas sit alias.
+                  A forum like Reddit , to let users chat and discuss different kind of topics, using the firebase library to store user accounts and information.
                 </p>
               </div>
             </div>
@@ -295,7 +295,7 @@ function contact(event){
           Email
           </a>
         </div>
-        <div className="footer__copyright">Copyright 2021</div>
+        <div className="footer__copyright">Copyright 2022</div>
       </div>
     </div>
     </footer>
