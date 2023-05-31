@@ -10,6 +10,7 @@ import ecom from './assets/Screenshot_2023-03-29_160803.png'
 import forum from './assets/Screenshot_2023-03-29_160931.png'
 import  emailjs  from '@emailjs/browser';
 import reactIMG from './assets/react4.png'
+import portfolio from './assets/certificate.png'
 
 
 function App() {
@@ -277,6 +278,10 @@ function contact(event){
           </ul>
         </div>
       </div>
+      <section>
+                <h1 className='cert__main'> My Certificate</h1>
+                <img src={portfolio} alt="" />
+      </section>
     </section>
     <footer>
       <div className="container">
