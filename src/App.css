@@ -437,7 +437,7 @@ nav{
   }
   .modal__languages{
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
   }
   .modal--open .modal__about, 
   .modal--open .modal__contact
@@ -446,14 +446,17 @@ nav{
   }
   .modal__language{
     width: 25%;
-    padding: 12px;
+    margin: 0;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    margin-top: 2rem;
   }
   .modal__language--img{
-    width: 50%;
+    width: 100%;
   }
   .modal__sub-title{
     margin: 12px 0 24px 0;

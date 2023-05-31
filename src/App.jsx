@@ -8,6 +8,8 @@ import adjust from './assets/adjust-solid.svg'
 import netflix from './assets/Screenshot_2023-03-29_160447.png'
 import ecom from './assets/Screenshot_2023-03-29_160803.png'
 import forum from './assets/Screenshot_2023-03-29_160931.png'
+import  emailjs  from '@emailjs/browser';
+import reactIMG from './assets/react4.png'
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
   let isModalOpen = false;
   let contrastToggle = false; 
 
-
+ 
   
   function toggleContrast(){
     contrastToggle = !contrastToggle;
@@ -37,21 +39,22 @@ function contact(event){
   const success = document.querySelector('.modal__overlay--success')
   loading.classList +=  " modal__overlay--visible"
 
-  // emailjs
-  .sendForm(
+  emailjs.sendForm(
       'service_oqv9az3', 
       'template_szpuk9m',
       event.target,
       '9I-PqnWEOw6bFzT02'
   ).then(() =>{
       loading.classList.remove("modal__overlay--visible");
-      success.classList += " modal__overlay--visible";
+      success.classList += "modal__overlay--visible";
   }).catch(() => {
       loading.classList.remove("modal__overlay--visible");
       alert( 
           'The email service is temporarily unavailable. Please contact me on my email'
       );
   })
+  // console.log(success)
+  // console.log(loading)
 }
 
 
@@ -159,6 +162,14 @@ function contact(event){
           <img className="modal__language--img" src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="" />
           <span className="language__name">HTML</span>
         </figure>
+        <figure className="modal__language">
+          <img className="modal__language--img" src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="" />
+          <span className="language__name">Next JS</span>
+        </figure>
+        <figure className="modal__language">
+          <img className="modal__language--img" src={reactIMG} alt="" />
+          <span className="language__name">React </span>
+        </figure>
       </div>
       </div>
       <div className="modal__half modal__contact">
@@ -171,7 +182,7 @@ function contact(event){
         <h3 className="modal__sub-title modal__sub-title--contact">
           I'm currently open for new opportunities.
         </h3>
-        <form id="contact__form" onSubmit={() => contact()}>
+        <form id="contact__form" onSubmit={(e) => contact(e)}>
           <div className="form__item">
             <label className="form__item--label">Name</label>
             <input type="text" name="user_name" className="input" />
